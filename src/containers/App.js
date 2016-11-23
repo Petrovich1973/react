@@ -16,16 +16,7 @@ class App extends Component {
     return <div className='row'>
       <Page photos={page.photos} year={page.year} setYear={setYear} setName={setUser} />
       <User name={user.name} />
-      <Table data={ [{
-        id: 1,
-        name: "Nonachka"
-      },{
-        id: 2,
-        name: "Kirill"
-      },{
-        id: 3,
-        name: "Liza"
-      }] } />
+      <Table datas={page.datas} />
     </div>
   }
 }

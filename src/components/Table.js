@@ -2,9 +2,9 @@ import React, { PropTypes, Component } from 'react'
 
 export default class Table extends Component {
   render() {
-    const { data } = this.props
-    const tbody = data.map(el => <tr key={el.id}><td>{el.id}</td><td>{el.name}</td></tr> )
-    return <table>
+    const { datas } = this.props
+    const tbody = datas.map(el => <tr key={el.id}><td>{el.id}</td><td>{el.name}</td></tr> )
+    return <table className="table">
       	<thead>
       		<tr>
       			<th>Id</th>
@@ -17,5 +17,5 @@ export default class Table extends Component {
 }
 
 Table.propTypes = {
-  data: PropTypes.array.isRequired
+  datas: PropTypes.array.isRequired
 }

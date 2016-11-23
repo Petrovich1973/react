@@ -2,7 +2,8 @@ import { SET_YEAR } from '../constants/Page'
 
 const initialState = {
   year: 2036,
-  photos: []
+  photos: [],
+  datas: [{"id": 1,"name": "Nonachka"},{"id": 2,"name": "Kirill"},{"id": 3,"name": "Liza"}]
 }
 
 export default function page(state = initialState, action) {
