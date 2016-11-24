@@ -1,2 +1,2 @@
 "# react redux" 
-TODO таблицу из json
+axios json
