@@ -3,6 +3,8 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import App from './containers/App'
 import './styles/app.css'
+import './styles/pagination.css'
+import './styles/select.css'
 import configureStore from './store/configureStore'
 
 const store = configureStore()

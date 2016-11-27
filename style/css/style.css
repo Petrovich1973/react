@@ -1,0 +1,154 @@
+body * {
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+::selection {
+	color: #fff;
+	background: rgba(0,0,0,0.7); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	color: #fff;
+	background: rgba(0,0,0,0.7); /* Gecko Browsers */
+}
+
+hr {
+	border: none;
+	margin: 0;
+	height: 4px;
+}
+.no_select {
+	-webkit-user-select: none;
+	user-select: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+img.center {
+	margin: 0 auto;
+}
+.align_center {
+	text-align: center;
+}
+/*colors shemes*/
+.backgroundWhite {
+	background-color: #fff;
+}
+
+
+.icon_main {
+    font-size: 2em !important;
+    margin: 0.67em 0;
+    float: left;
+}
+
+.title_paragraph {
+	padding-left: 36px;
+	position: relative;
+	color: #167d79;
+}
+.bulit {
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: inherit;
+	font-style: normal;
+}
+
+.content {
+	line-height: 1.42em;
+}
+
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.banner img {
+	display: block;
+}
+
+.banner_static {
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-image: url('../img/bg_js.jpg');
+	opacity: .4;
+}
+.windowBanner {
+	color: #fff;
+	font-size: 1.5em;
+}
+.windowBanner h1 {
+	float: left;
+	padding-left: 10px;
+}
+.windowBanner *::selection {
+	color: #000;
+	background: rgba(255,255,255,0.7);
+}
+.windowBanner *::-moz-selection {
+	color: #000;
+	background: rgba(255,255,255,0.7);
+}
+.windowBanner hr {
+	opacity: .7;
+	height: 6px;
+}
+.windowBanner ul {
+	margin: 0;
+	padding: 0;
+	list-style: square;
+}
+.windowBanner ul li {
+	margin-bottom: 1.15em;
+	font-size: .76em
+}
+   
+/*.adminheader:before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	content: "\f007";
+}*/
+
+
+.cell_2 > * {
+	width: 50%;
+	float: left;
+	padding: 0 20px;
+}
+.cell_2 > *:first-child {
+	padding-left: 0;
+}
+.cell_2 > *:last-child {
+	padding-right: 0;
+}
+
+.cell_2:after,
+.cell_3:after,
+.cell_4:after,
+.cell_5:after,
+.cell_6:after,
+.cell_7:after,
+.cell_8:after,
+.clear {
+	display: block;
+	content: "";
+	clear: both;
+}

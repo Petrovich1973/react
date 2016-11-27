@@ -101,11 +101,36 @@ h3 {
 }
 .table {
   border-spacing: 0;
+  width: 400px;
 }
 .table th,
 .table td {
-  border: 1px solid #ccc;
   padding: 10px;
   vertical-align: top;
   text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+.table tr th:first-child {
+  width: 30px;
+}
+
+.pagination .span {
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  line-height: 1;
+  padding: 4px;
+  box-sizing: border-box;
+  margin: 0 1px;
+  min-width: 26px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.pagination .span:hover,
+.pagination .span.current {
+  background: #333;
+  color: #fff;
+  cursor: default;
 }
